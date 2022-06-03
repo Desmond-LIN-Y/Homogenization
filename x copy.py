@@ -55,8 +55,15 @@ for time in range(100):
 #print(grid)
 def u(x,y):
     return newgrid[x,y]
+
+
 from matplotlib import pyplot as plt
-a=[i for i in range(dim)]
-x,y=np.meshgrid(a,a)
-plt.matshow(grid, cmap=plt.cm.gray)
-plt.show()
+#a=[i for i in range(dim)]
+#x,y=np.meshgrid(a,a)
+#plt.matshow(grid, cmap=plt.cm.gray)
+#plt.show()
+
+x_values = np.linspace(0,10,100)
+y_values = np.linspace(0,10,100)
+x, y = np.meshgrid(x_values, y_values)
+plt.imshow(grid)
