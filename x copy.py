@@ -5,21 +5,7 @@ Aim: prove that solution using finite differences, when using smaller lattice sp
 import numpy as np
 from random import choice
 from copy import deepcopy
-A_ep=np.array(
-    [
-        [1,2],
-        [2,1]
-    ]
-)
 
-A_ep2=np.array(
-    [
-        [1,2,1,2],
-        [2,1,2,1],
-        [1,2,1,2],
-        [2,1,2,1],
-    ]
-)
 
 def coefs(i,j):
     if (i+j)%2==0:
