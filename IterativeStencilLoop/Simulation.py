@@ -1,3 +1,9 @@
+"""
+This programme simulates the source as a single point(square) in the lattice. 
+It is better to simulate a domain of source, which is implemented in Simulation_DL.ipynb
+"""
+
+
 import numpy as np
 from copy import deepcopy
 from matplotlib import pyplot as plt
